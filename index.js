@@ -22,20 +22,26 @@ function getConsoles(consoleid){
             img.setAttribute('class', 'game-pic')
             img.setAttribute('src', 'http://www.nelsonbernard.com/gpgapp/images/' + consoleid + '/' + game.image);
             divGamePic.appendChild(img);
-            
+
             var divGameInfo = document.createElement('div');
             divGameInfo.setAttribute('class', 'game-info');
             var divGameTitle = document.createElement('div');
             divGameTitle.setAttribute('class', 'game-title');
-            divGameTitle.innerText = game.name;
-            divGameInfo.appendChild(divGameTitle);
             
             divGameCard.appendChild(divGamePic);
-            divGameCard.appendChild(divGameInfo);
+            
+            // var divGameInfo = document.createElement('div');
+            // divGameInfo.setAttribute('class', 'game-info');
+            // var divGameTitle = document.createElement('div');
+            // divGameTitle.setAttribute('class', 'game-title');
+            // divGameTitle.innerText = game.name;
+            // divGameInfo.appendChild(divGameTitle);
+            
+            // divGameCard.appendChild(divGameInfo);
             
             return document.getElementById('game-grid').appendChild(divGameCard);
         });})
     .catch(err => console.error(err));
 }
 
-//getConsoles('sega-saturn');
+getConsoles('super-nintendo');
