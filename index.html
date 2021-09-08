@@ -11,47 +11,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="./node_modules/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
     <title>Videogame Reserve</title>
   </head>
 
   <body>
     <header>
-      <a class="name" href="#">VideogameReserve.com</a>
       <nav>
+        <p>VGReserve.com</p>
+
+        <button class="dropdown-menu" id="dropdown-menu">☰</button>
+
         <ul class="nav-links">
           <li><a href="#">My Collection</a></li>
           <li><a href="#">Platforms</a></li>
+          <li><a class="btn-signin" href="#">Sign In</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#"><button>Sign In</button></a>
     </header>
 
     <div class="container">
+      <div class="platform-name">Super Nintendo</div>
+    </div>
+
+    <div class="container">
+      <div class="game-grid" id="game-grid">Test</div>
+    </div>
+
+    <footer id="footer">
+      <div>Copyright 2021</div>
+    </footer>
+    <!-- <div class="container">
       <div class="platforms">
         <h3 class="platform-name">Game Boy</h3>
         <div class="game-grid" id="game-grid">
 
         </div>
       </div>
-    </div>
-      <!-- <div class="header-container container"> 
-        <div class="brand">
-          <img src="game-center64.png" class="logo">
-          <a href="/" class="name" title="VideoGameReserve.com">VideoGameReserve.com</a>
-        </div>
-      </div>      -->
-      <!-- <div class="navbar">
+    </div> -->
 
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">My Collection</a>
-          <a href="#">Platforms</a>
-          <input type="search" class="search"/>
-        </div> 
-      </div> -->
-      <!-- <footer>
-        <div class="credits">Icons made by <a href="https://www.flaticon.com/authors/skyclick" title="Skyclick">Skyclick</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      </footer> -->
   </body>
+
+  <script src="index.js"></script>
+
 </html>

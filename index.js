@@ -1,3 +1,12 @@
+const menu = document.getElementById('dropdown-menu');
+const ul = document.querySelector('nav ul');
+
+console.log(menu);
+
+menu.addEventListener('click', () => {
+    ul.classList.toggle('show');
+});
+
 function getConsoles(consoleid){
     axios.post('http://www.nelsonbernard.com/gpgapp/phpscripts/gamesbyconsole.php', {
         consoleid: consoleid
@@ -29,4 +38,4 @@ function getConsoles(consoleid){
     .catch(err => console.error(err));
 }
 
-getConsoles('sega-saturn');
+//getConsoles('sega-saturn');
