@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e09f0ff9cd.js" crossorigin="anonymous"></script>
     <script src="./node_modules/axios/dist/axios.min.js"></script>
     <title>Videogame Reserve</title>
   </head>
@@ -17,25 +18,43 @@
   <body>
     <header>
       <nav>
-        <p>VGReserve.com</p>
+        <p>VideoGame Reserve</p>
 
         <button class="dropdown-menu" id="dropdown-menu">☰</button>
 
         <ul class="nav-links">
           <li><a href="#">My Collection</a></li>
-          <li><a href="#">Platforms</a></li>
+          <li>
+            <div class="platform-dropdown">
+              <button class="dropbtn" id="dropbtn">Platforms
+                <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="platform-dropdown-content" id="platform-content">
+
+              </div>
+            </div>
+            <!-- <a href="#">Platforms</a>
+            <div class="platform-list">
+              <ul class="platform-dropdown" id="platform-dropdown">
+
+              </ul>
+            </div> -->
+
+          </li>
           <li><a class="btn-signin" href="#">Sign In</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="platform-container">
-      <div class="platform-name">Super Nintendo</div>
-    </div>
-
-    <div class="grid-container">
-      <div class="game-grid" id="game-grid"></div>
-    </div>
+    <section class="section" id="main">
+      <div class="platform-container">
+        <div class="platform-name" id="platform-name"></div>
+      </div>
+  
+      <div class="grid-container">
+        <div class="game-grid" id="game-grid"></div>
+      </div>
+    </section>
 
     <footer id="footer">
       <div>Copyright 2021</div>
